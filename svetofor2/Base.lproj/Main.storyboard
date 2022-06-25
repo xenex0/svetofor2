@@ -30,13 +30,16 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-we-IW3">
-                                <rect key="frame" x="166" y="792" width="96" height="44"/>
+                                <rect key="frame" x="177.66666666666666" y="792" width="73" height="44"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="start">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDW-f5-0Gd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -64,6 +67,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oB0-Mv-5Ef" secondAttribute="trailing" constant="132" id="w6e-Ti-1KG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="green" destination="nHP-Xq-cha" id="Mqe-5J-mqK"/>
+                        <outlet property="press" destination="RZn-we-IW3" id="EYm-iU-maU"/>
+                        <outlet property="red" destination="oB0-Mv-5Ef" id="XvZ-LJ-dY7"/>
+                        <outlet property="yellow" destination="y1f-e8-hzL" id="dke-du-l1o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
